@@ -7,9 +7,10 @@ This script ensures proper Python path setup for the backend.
 import sys
 import os
 
-# Add the parent directory to Python path
-parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, parent_dir)
+# Add the project root to Python path
+project_root = os.path.dirname(os.path.abspath(__file__))  # backend/
+project_root = os.path.dirname(project_root)              # Cineo-movie-gen/
+sys.path.insert(0, project_root)
 
 # Now import and run the main application
 from backend.main import app
