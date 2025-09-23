@@ -7,16 +7,9 @@ This script ensures proper Python path setup for the backend.
 import sys
 import os
 
-# Detect if running in Kaggle/Colab
-if "kaggle" in os.getcwd() or "content" in os.getcwd():
-    # Path to the project root
-    project_root = "/kaggle/working/Cineo-movie-gen"  # Change if cloned elsewhere
-else:
-    # Local path
-    project_root = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
-
-# Add project root to Python path
-sys.path.insert(0, project_root)
+# Add the parent directory to Python path
+parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, parent_dir)
 
 # Now import and run the main application
 from backend.main import app
