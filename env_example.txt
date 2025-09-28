@@ -1,0 +1,14 @@
+# Cineo AI - API Keys Configuration
+# Rename this file to ".env" and add your actual API keys
+
+# Flask Security (change this to a random string)
+SECRET_KEY=your-super-secret-key-change-this-in-production-12345
+
+# AI API Keys for Full Functionality
+OPENROUTER_API_KEY=your-openrouter-api-key-here
+STABILITY_API_KEY=your-stability-ai-api-key-here
+ELEVENLABS_API_KEY=your-elevenlabs-api-key-here
+
+# Optional AI Services (for enhanced features)
+REPLICATE_API_KEY=your-replicate-api-key-here
+HUGGINGFACE_API_KEY=your-huggingface-api-key-here

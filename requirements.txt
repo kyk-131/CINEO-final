@@ -1,72 +1,37 @@
-# Transformers and Diffusers
-transformers
-diffusers
-datasets
-sentence-transformers
-accelerate
-
-# Core Data Science
-numpy
-pandas
-scipy
-scikit-learn
-matplotlib
-pillow
-
-# FastAPI Backend
-fastapi
-uvicorn
-pydantic
-python-multipart
-python-jose[cryptography]
-passlib[bcrypt]
+# Flask and Web Framework
+Flask==2.3.3
+Flask-SQLAlchemy==3.0.5
+Flask-Login==0.6.3
+Flask-SocketIO==5.3.6
+Werkzeug==2.3.7
 
 # Database
-sqlalchemy
-alembic
+SQLAlchemy==2.0.23
 
-# Environment and Config
-python-dotenv
-pyyaml
+# AI and ML Libraries
+torch==2.1.1
+torchvision==0.16.1
+transformers==4.35.2
+diffusers==0.24.0
+accelerate==0.24.1
 
-# HTTP and API clients
-httpx
-requests
-aiohttp
+# Image and Video Processing
+Pillow==10.1.0
+opencv-python==4.8.1.78
+moviepy==1.0.3
+imageio==2.33.0
+imageio-ffmpeg==0.5.1
+numpy==1.24.3
 
-# Image/Video Processing
-opencv-python
-imageio
-imageio-ffmpeg
-ffmpeg-python
+# HTTP Requests and APIs
+requests==2.31.0
 
-# Audio Processing
-librosa
-soundfile
-pydub
+# Environment Variables
+python-dotenv==1.0.0
 
-# Storage and Cloud
-boto3
-google-cloud-storage
+# Additional ML/AI Tools
+scikit-image==0.21.0
+av==10.0.0
 
-# Payment Processing
-stripe
-
-# Redis (optional)
-redis
-
-# Utilities
-tqdm
-rich
-click
-typing-extensions
-
-# Development/Testing (optional)
-pytest
-pytest-asyncio
-black
-flake8
-
-# Jupyter (if needed)
-jupyter
-ipython
+# Optional: For better performance
+# gunicorn==21.2.0  # For production deployment
