@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Settings:
-    # Database
-    DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./cineo.db")
+    # Database - Always use SQLite
+    DATABASE_URL: str = "sqlite:///./cineo_db.sqlite3"
 
     # JWT
     SECRET_KEY: str = os.getenv("SECRET_KEY", "your-secret-key-here")

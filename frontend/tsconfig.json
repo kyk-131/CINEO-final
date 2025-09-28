@@ -31,7 +31,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "../../components/ClientProviders.tsx"  ],
   "exclude": [
     "node_modules"
   ]
